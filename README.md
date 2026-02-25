@@ -5,12 +5,11 @@ AI Image Colorization is a deep learning–based project that automatically conv
 # Image Colorization for old Image
 <p align="center"><img src="./example/many_people_nature.gif"></p>
 
-This is a project that utilizes deep learning technology to colorize black-and-white images with historical significance during the Gwangju democratization movement of May 18th. The project was developed with the support of SK Telecom as part of the AI Fellowship. Only a portion of the code has been made public, and if you are interested in more advanced techniques, please inquire via email. (icanlgh0016@gmail.com / toqufns@gmail.com)
+This is a project that utilizes deep learning technology to colorize black-and-white images with historical significance.
 
 The code consists of three main parts: Automatic Colorization, Hint-based Colorization, and Multi-modal Colorization.
-- We developed Demo for Automatic Colorization and Hint-based Colorization [[DEMO]](https://github.com/SaebyeolShin/Colorization_UI)
-- Through the Multi-modal Colorization code, a Chatbot has been developed to restore black-and-white images on the Kakao Channel. [[KAKAO CHANNEL]](http://pf.kakao.com/_mxgELxj) (Currently down due to GCP cost issues...)
-
+- We developed Demo for Automatic Colorization and Hint-based Colorization 
+- Through the Multi-modal Colorization code, a Chatbot has been developed to restore black-and-white images on the Kakao Channel. 
 
 # Automatic Colorization
 <p align="center"><img src="./example/vis1.gif"></p>
@@ -30,22 +29,4 @@ The motivation behind developing this method was the technical implementation ch
 Therefore, we developed a method that enables image colorization in KakaoTalk using only "Text" as input. In the image provided, intermediate steps have been omitted, but the method uses CLIP to identify the desired regions and provides user guidance for those regions, allowing for "text-based image colorization."
 
 
-# Future Projects
-## Image Color Transfer
-<p align="center"><img src="./example/transfer1.png"></p>
-<p align="center"><img src="./example/transfer2.png"></p>
-<p align="center"><img src="./example/transfer3.png"></p>
-<p align="center"><img src="./example/transfer4.png"></p>
 
-Rather than simply restoring black-and-white images, we wondered if this technology could be used to convert certain regions of color images into different colors. To achieve "Recolorization" into different colors, only the user's guidance needs to be provided as input. Currently, the code is naively developed, and there are many issues regarding the training process that need to be addressed, which we plan to resolve in the future.
-
-## Restore images of the veterans in the Korean War
-<p align="center"><img src="./example/625_1.PNG"></p>
-<p align="center"><img src="./example/625_2.PNG"></p>
-
-After completing an internship at SK Telecom, we wanted to apply the technology to a more meaningful way, so we attempted to restore images of the veterans in the Korean War. Since the old photos had a lot of noise, additional training techniques were required, but we have not publicly released this specific code in this page.
-
-# Thanks for
-- iColoriT (https://github.com/pmh9960/iColoriT)
-
-    Our GUI is an updated version of the iColoriT: Towards Propagating Local Hint to the Right Region in Interactive Colorization by Leveraging Vision Transformer. Thanks for sharing the codes!
